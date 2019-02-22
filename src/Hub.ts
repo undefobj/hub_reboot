@@ -22,10 +22,6 @@ export class HubClass {
     return new HubClass(name);
   }
 
-  myFunction(input: string) {
-    return input;
-  }
-
   attachDispatchToListener(group: string, dispatcher: Function) {
     let holder = this.listeners[group];
     if (!holder) {
