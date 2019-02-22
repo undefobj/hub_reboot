@@ -18,6 +18,7 @@ export class HubClass {
   }
 
   static createHub(name: string) {
+    console.warn(`WARNING: createHub will be deprecated in the future and is considered unsafe`)
     return new HubClass(name);
   }
 
