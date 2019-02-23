@@ -3,7 +3,9 @@ This is an experimental refactor of the [Amplify Hub module](https://aws-amplify
 Motivations for this refactor:
 - Make usage of Amplify events easier across categories
 - Improve Auth flows inside of an app, especially rendering and transitions upon events
-- Provide a debugging
+- Provide a realtime debugging experience when issues are taking place
+- Enable easier application usage by reducing code duplication
+- Enable easier application usage by exposing better hooks into the channels
 
 
 ### Listening for messages
