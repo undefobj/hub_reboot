@@ -34,6 +34,10 @@ export class HubClass {
     })
   }
 
+  /*
+    Can we create an interface for payload and enforce a structure without breaking anything?
+    Can we move channel to be a string type?
+  */
   dispatch(channel: any, payload: any, source: string = '', ..._rest) {
 
     if (this.protectedChannels.indexOf(channel) > -1) {
@@ -93,6 +97,11 @@ export class HubClass {
         } catch (e) { console.error(e); }
       })
     }
+
+    /*
+      Will payload.data be an object at any time? Need to investigate before release
+      Should we also test the Regex against payload.data.event?
+    */
 
     if (this.patterns.length > 0) {
       this.patterns.forEach(pattern => {
