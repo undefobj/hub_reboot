@@ -7,6 +7,13 @@ Motivations for this refactor:
 - Enable easier application usage by reducing code duplication
 - Enable easier application usage by exposing better hooks into the channels
 
+### Testing this sample
+
+1. Clone the repo
+2. `npm install` to install node dependencies
+3. `npm run start`
+
+You will see the event dispatches in `index.ts`. There are two classes (`ClassA.ts` and `ClassB.ts`) showcasing different ways to listen to channels or event streams. The main `index.ts` also has commented code on attaching "middleware" dispatch functions. Comment/uncomment code as appropriate.
 
 ### Listening for messages
 
